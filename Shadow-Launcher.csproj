@@ -1,0 +1,387 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Beon Launcher</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net472</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="banner.png" />
+    <None Remove="fortnite-drift-outfit.png" />
+    <None Remove="oip-20-7-.jpg" />
+    <None Remove="images.jpg" />
+    <None Remove="fortnite-chapter-2-season-3-teaser.jpg" />
+    <None Remove="oip.jpg" />
+    <None Remove="battle-20pass-20icon.png" />
+    <None Remove="loadingbar.png" />
+    <None Remove="fortnite_blog_season-5_br05_news_header_16_9_launch_battle-pass-1920x1080-90ac1caf751529e4b36a79a36be7ef7001629854.jpg" />
+    <None Remove="ea0a5f2593398fefeff84c71cc8b4c59.png" />
+    <None Remove="costura.awssdk.core.dll.compressed" />
+    <None Remove="costura.awssdk.core.pdb.compressed" />
+    <None Remove="costura.awssdk.securitytoken.dll.compressed" />
+    <None Remove="costura.awssdk.securitytoken.pdb.compressed" />
+    <None Remove="costura.costura.dll.compressed" />
+    <None Remove="costura.costura.pdb.compressed" />
+    <None Remove="costura.discordrpc.dll.compressed" />
+    <None Remove="costura.discordrpc.pdb.compressed" />
+    <None Remove="costura.dnsclient.dll.compressed" />
+    <None Remove="costura.inifileparser.dll.compressed" />
+    <None Remove="costura.microsoft.bcl.asyncinterfaces.dll.compressed" />
+    <None Remove="costura.microsoft.extensions.logging.abstractions.dll.compressed" />
+    <None Remove="costura.microsoft.toolkit.uwp.notifications.dll.compressed" />
+    <None Remove="costura.microsoft.toolkit.uwp.notifications.pdb.compressed" />
+    <None Remove="costura.microsoft.win32.registry.dll.compressed" />
+    <None Remove="costura.modernwpf.controls.dll.compressed" />
+    <None Remove="costura.modernwpf.dll.compressed" />
+    <None Remove="costura.mongodb.bson.dll.compressed" />
+    <None Remove="costura.mongodb.driver.dll.compressed" />
+    <None Remove="costura.mongodb.driver.core.dll.compressed" />
+    <None Remove="costura.mongodb.libmongocrypt.dll.compressed" />
+    <None Remove="costura.newtonsoft.json.dll.compressed" />
+    <None Remove="costura.sharpcompress.dll.compressed" />
+    <None Remove="costura.snappier.dll.compressed" />
+    <None Remove="costura.system.buffers.dll.compressed" />
+    <None Remove="costura.system.memory.dll.compressed" />
+    <None Remove="costura.system.numerics.vectors.dll.compressed" />
+    <None Remove="costura.system.runtime.compilerservices.unsafe.dll.compressed" />
+    <None Remove="costura.system.security.accesscontrol.dll.compressed" />
+    <None Remove="costura.system.security.principal.windows.dll.compressed" />
+    <None Remove="costura.system.text.encoding.codepages.dll.compressed" />
+    <None Remove="costura.system.threading.tasks.extensions.dll.compressed" />
+    <None Remove="costura.system.valuetuple.dll.compressed" />
+    <None Remove="costura.windowsapicodepack.shell.commonfiledialogs.dll.compressed" />
+    <None Remove="costura.wpf.ui.dll.compressed" />
+    <None Remove="costura.wpf.ui.pdb.compressed" />
+    <None Remove="costura.zstdsharp.dll.compressed" />
+    <None Remove="costura.af-za.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.af-za.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.am-et.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.am-et.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ar-sa.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ar-sa.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.az-latn-az.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.az-latn-az.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.be-by.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.be-by.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.bg-bg.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.bg-bg.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.bn-bd.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.bn-bd.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.bs-latn-ba.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.bs-latn-ba.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ca-es.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ca-es.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.cs-cz.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.cs-cz.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.da-dk.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.da-dk.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.de-de.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.de-de.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.el-gr.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.el-gr.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.en-gb.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.en-gb.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.es-es.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.es-es.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.es-mx.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.es-mx.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.et-ee.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.et-ee.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.eu-es.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.eu-es.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.fa-ir.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.fa-ir.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.fi-fi.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.fi-fi.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.fil-ph.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.fil-ph.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.fr-ca.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.fr-ca.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.fr-fr.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.fr-fr.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.gl-es.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.gl-es.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.he-il.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.he-il.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.hi-in.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.hi-in.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.hr-hr.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.hr-hr.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.hu-hu.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.hu-hu.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.id-id.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.id-id.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.is-is.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.is-is.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.it-it.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.it-it.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ja-jp.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ja-jp.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ka-ge.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ka-ge.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.kk-kz.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.kk-kz.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.km-kh.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.km-kh.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.kn-in.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.kn-in.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ko-kr.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ko-kr.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.lo-la.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.lo-la.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.lt-lt.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.lt-lt.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.lv-lv.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.lv-lv.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.mk-mk.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.mk-mk.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ml-in.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ml-in.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ms-my.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ms-my.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.nb-no.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.nb-no.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.nl-nl.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.nl-nl.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.nn-no.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.nn-no.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.pl-pl.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.pl-pl.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.pt-br.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.pt-br.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.pt-pt.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.pt-pt.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ro-ro.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ro-ro.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ru-ru.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ru-ru.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.sk-sk.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.sk-sk.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.sl-si.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.sl-si.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.sq-al.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.sq-al.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.sr-latn-rs.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.sr-latn-rs.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.sv-se.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.sv-se.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.sw-ke.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.sw-ke.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.ta-in.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.ta-in.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.te-in.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.te-in.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.th-th.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.th-th.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.tr-tr.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.tr-tr.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.uk-ua.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.uk-ua.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.uz-latn-uz.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.uz-latn-uz.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.vi-vn.modernwpf.controls.resources.dll.compressed" />
+    <None Remove="costura.vi-vn.modernwpf.resources.dll.compressed" />
+    <None Remove="costura.mongocrypt.dll.compressed" />
+    <None Remove="costura.metadata" />
+    <EmbeddedResource Include="banner.png" LogicalName="banner.png" />
+    <EmbeddedResource Include="fortnite-drift-outfit.png" LogicalName="fortnite-drift-outfit.png" />
+    <EmbeddedResource Include="oip-20-7-.jpg" LogicalName="oip%20(7).jpg" />
+    <EmbeddedResource Include="images.jpg" LogicalName="images.jpg" />
+    <EmbeddedResource Include="fortnite-chapter-2-season-3-teaser.jpg" LogicalName="fortnite-chapter-2-season-3-teaser.jpg" />
+    <EmbeddedResource Include="oip.jpg" LogicalName="oip.jpg" />
+    <EmbeddedResource Include="battle-20pass-20icon.png" LogicalName="battle%20pass%20icon.png" />
+    <EmbeddedResource Include="loadingbar.png" LogicalName="loadingbar.png" />
+    <EmbeddedResource Include="fortnite_blog_season-5_br05_news_header_16_9_launch_battle-pass-1920x1080-90ac1caf751529e4b36a79a36be7ef7001629854.jpg" LogicalName="fortnite_blog_season-5_br05_news_header_16_9_launch_battle-pass-1920x1080-90ac1caf751529e4b36a79a36be7ef7001629854.jpg" />
+    <EmbeddedResource Include="ea0a5f2593398fefeff84c71cc8b4c59.png" LogicalName="ea0a5f2593398fefeff84c71cc8b4c59.png" />
+    <EmbeddedResource Include="costura.awssdk.core.dll.compressed" LogicalName="costura.awssdk.core.dll.compressed" />
+    <EmbeddedResource Include="costura.awssdk.core.pdb.compressed" LogicalName="costura.awssdk.core.pdb.compressed" />
+    <EmbeddedResource Include="costura.awssdk.securitytoken.dll.compressed" LogicalName="costura.awssdk.securitytoken.dll.compressed" />
+    <EmbeddedResource Include="costura.awssdk.securitytoken.pdb.compressed" LogicalName="costura.awssdk.securitytoken.pdb.compressed" />
+    <EmbeddedResource Include="costura.costura.dll.compressed" LogicalName="costura.costura.dll.compressed" />
+    <EmbeddedResource Include="costura.costura.pdb.compressed" LogicalName="costura.costura.pdb.compressed" />
+    <EmbeddedResource Include="costura.discordrpc.dll.compressed" LogicalName="costura.discordrpc.dll.compressed" />
+    <EmbeddedResource Include="costura.discordrpc.pdb.compressed" LogicalName="costura.discordrpc.pdb.compressed" />
+    <EmbeddedResource Include="costura.dnsclient.dll.compressed" LogicalName="costura.dnsclient.dll.compressed" />
+    <EmbeddedResource Include="costura.inifileparser.dll.compressed" LogicalName="costura.inifileparser.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.bcl.asyncinterfaces.dll.compressed" LogicalName="costura.microsoft.bcl.asyncinterfaces.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.extensions.logging.abstractions.dll.compressed" LogicalName="costura.microsoft.extensions.logging.abstractions.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.toolkit.uwp.notifications.dll.compressed" LogicalName="costura.microsoft.toolkit.uwp.notifications.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.toolkit.uwp.notifications.pdb.compressed" LogicalName="costura.microsoft.toolkit.uwp.notifications.pdb.compressed" />
+    <EmbeddedResource Include="costura.microsoft.win32.registry.dll.compressed" LogicalName="costura.microsoft.win32.registry.dll.compressed" />
+    <EmbeddedResource Include="costura.modernwpf.controls.dll.compressed" LogicalName="costura.modernwpf.controls.dll.compressed" />
+    <EmbeddedResource Include="costura.modernwpf.dll.compressed" LogicalName="costura.modernwpf.dll.compressed" />
+    <EmbeddedResource Include="costura.mongodb.bson.dll.compressed" LogicalName="costura.mongodb.bson.dll.compressed" />
+    <EmbeddedResource Include="costura.mongodb.driver.dll.compressed" LogicalName="costura.mongodb.driver.dll.compressed" />
+    <EmbeddedResource Include="costura.mongodb.driver.core.dll.compressed" LogicalName="costura.mongodb.driver.core.dll.compressed" />
+    <EmbeddedResource Include="costura.mongodb.libmongocrypt.dll.compressed" LogicalName="costura.mongodb.libmongocrypt.dll.compressed" />
+    <EmbeddedResource Include="costura.newtonsoft.json.dll.compressed" LogicalName="costura.newtonsoft.json.dll.compressed" />
+    <EmbeddedResource Include="costura.sharpcompress.dll.compressed" LogicalName="costura.sharpcompress.dll.compressed" />
+    <EmbeddedResource Include="costura.snappier.dll.compressed" LogicalName="costura.snappier.dll.compressed" />
+    <EmbeddedResource Include="costura.system.buffers.dll.compressed" LogicalName="costura.system.buffers.dll.compressed" />
+    <EmbeddedResource Include="costura.system.memory.dll.compressed" LogicalName="costura.system.memory.dll.compressed" />
+    <EmbeddedResource Include="costura.system.numerics.vectors.dll.compressed" LogicalName="costura.system.numerics.vectors.dll.compressed" />
+    <EmbeddedResource Include="costura.system.runtime.compilerservices.unsafe.dll.compressed" LogicalName="costura.system.runtime.compilerservices.unsafe.dll.compressed" />
+    <EmbeddedResource Include="costura.system.security.accesscontrol.dll.compressed" LogicalName="costura.system.security.accesscontrol.dll.compressed" />
+    <EmbeddedResource Include="costura.system.security.principal.windows.dll.compressed" LogicalName="costura.system.security.principal.windows.dll.compressed" />
+    <EmbeddedResource Include="costura.system.text.encoding.codepages.dll.compressed" LogicalName="costura.system.text.encoding.codepages.dll.compressed" />
+    <EmbeddedResource Include="costura.system.threading.tasks.extensions.dll.compressed" LogicalName="costura.system.threading.tasks.extensions.dll.compressed" />
+    <EmbeddedResource Include="costura.system.valuetuple.dll.compressed" LogicalName="costura.system.valuetuple.dll.compressed" />
+    <EmbeddedResource Include="costura.windowsapicodepack.shell.commonfiledialogs.dll.compressed" LogicalName="costura.windowsapicodepack.shell.commonfiledialogs.dll.compressed" />
+    <EmbeddedResource Include="costura.wpf.ui.dll.compressed" LogicalName="costura.wpf.ui.dll.compressed" />
+    <EmbeddedResource Include="costura.wpf.ui.pdb.compressed" LogicalName="costura.wpf.ui.pdb.compressed" />
+    <EmbeddedResource Include="costura.zstdsharp.dll.compressed" LogicalName="costura.zstdsharp.dll.compressed" />
+    <EmbeddedResource Include="costura.af-za.modernwpf.controls.resources.dll.compressed" LogicalName="costura.af-za.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.af-za.modernwpf.resources.dll.compressed" LogicalName="costura.af-za.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.am-et.modernwpf.controls.resources.dll.compressed" LogicalName="costura.am-et.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.am-et.modernwpf.resources.dll.compressed" LogicalName="costura.am-et.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ar-sa.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ar-sa.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ar-sa.modernwpf.resources.dll.compressed" LogicalName="costura.ar-sa.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.az-latn-az.modernwpf.controls.resources.dll.compressed" LogicalName="costura.az-latn-az.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.az-latn-az.modernwpf.resources.dll.compressed" LogicalName="costura.az-latn-az.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.be-by.modernwpf.controls.resources.dll.compressed" LogicalName="costura.be-by.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.be-by.modernwpf.resources.dll.compressed" LogicalName="costura.be-by.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.bg-bg.modernwpf.controls.resources.dll.compressed" LogicalName="costura.bg-bg.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.bg-bg.modernwpf.resources.dll.compressed" LogicalName="costura.bg-bg.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.bn-bd.modernwpf.controls.resources.dll.compressed" LogicalName="costura.bn-bd.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.bn-bd.modernwpf.resources.dll.compressed" LogicalName="costura.bn-bd.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.bs-latn-ba.modernwpf.controls.resources.dll.compressed" LogicalName="costura.bs-latn-ba.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.bs-latn-ba.modernwpf.resources.dll.compressed" LogicalName="costura.bs-latn-ba.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ca-es.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ca-es.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ca-es.modernwpf.resources.dll.compressed" LogicalName="costura.ca-es.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.cs-cz.modernwpf.controls.resources.dll.compressed" LogicalName="costura.cs-cz.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.cs-cz.modernwpf.resources.dll.compressed" LogicalName="costura.cs-cz.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.da-dk.modernwpf.controls.resources.dll.compressed" LogicalName="costura.da-dk.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.da-dk.modernwpf.resources.dll.compressed" LogicalName="costura.da-dk.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.de-de.modernwpf.controls.resources.dll.compressed" LogicalName="costura.de-de.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.de-de.modernwpf.resources.dll.compressed" LogicalName="costura.de-de.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.el-gr.modernwpf.controls.resources.dll.compressed" LogicalName="costura.el-gr.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.el-gr.modernwpf.resources.dll.compressed" LogicalName="costura.el-gr.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.en-gb.modernwpf.controls.resources.dll.compressed" LogicalName="costura.en-gb.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.en-gb.modernwpf.resources.dll.compressed" LogicalName="costura.en-gb.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.es-es.modernwpf.controls.resources.dll.compressed" LogicalName="costura.es-es.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.es-es.modernwpf.resources.dll.compressed" LogicalName="costura.es-es.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.es-mx.modernwpf.controls.resources.dll.compressed" LogicalName="costura.es-mx.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.es-mx.modernwpf.resources.dll.compressed" LogicalName="costura.es-mx.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.et-ee.modernwpf.controls.resources.dll.compressed" LogicalName="costura.et-ee.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.et-ee.modernwpf.resources.dll.compressed" LogicalName="costura.et-ee.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.eu-es.modernwpf.controls.resources.dll.compressed" LogicalName="costura.eu-es.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.eu-es.modernwpf.resources.dll.compressed" LogicalName="costura.eu-es.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fa-ir.modernwpf.controls.resources.dll.compressed" LogicalName="costura.fa-ir.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fa-ir.modernwpf.resources.dll.compressed" LogicalName="costura.fa-ir.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fi-fi.modernwpf.controls.resources.dll.compressed" LogicalName="costura.fi-fi.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fi-fi.modernwpf.resources.dll.compressed" LogicalName="costura.fi-fi.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fil-ph.modernwpf.controls.resources.dll.compressed" LogicalName="costura.fil-ph.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fil-ph.modernwpf.resources.dll.compressed" LogicalName="costura.fil-ph.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fr-ca.modernwpf.controls.resources.dll.compressed" LogicalName="costura.fr-ca.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fr-ca.modernwpf.resources.dll.compressed" LogicalName="costura.fr-ca.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fr-fr.modernwpf.controls.resources.dll.compressed" LogicalName="costura.fr-fr.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.fr-fr.modernwpf.resources.dll.compressed" LogicalName="costura.fr-fr.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.gl-es.modernwpf.controls.resources.dll.compressed" LogicalName="costura.gl-es.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.gl-es.modernwpf.resources.dll.compressed" LogicalName="costura.gl-es.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.he-il.modernwpf.controls.resources.dll.compressed" LogicalName="costura.he-il.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.he-il.modernwpf.resources.dll.compressed" LogicalName="costura.he-il.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.hi-in.modernwpf.controls.resources.dll.compressed" LogicalName="costura.hi-in.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.hi-in.modernwpf.resources.dll.compressed" LogicalName="costura.hi-in.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.hr-hr.modernwpf.controls.resources.dll.compressed" LogicalName="costura.hr-hr.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.hr-hr.modernwpf.resources.dll.compressed" LogicalName="costura.hr-hr.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.hu-hu.modernwpf.controls.resources.dll.compressed" LogicalName="costura.hu-hu.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.hu-hu.modernwpf.resources.dll.compressed" LogicalName="costura.hu-hu.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.id-id.modernwpf.controls.resources.dll.compressed" LogicalName="costura.id-id.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.id-id.modernwpf.resources.dll.compressed" LogicalName="costura.id-id.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.is-is.modernwpf.controls.resources.dll.compressed" LogicalName="costura.is-is.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.is-is.modernwpf.resources.dll.compressed" LogicalName="costura.is-is.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.it-it.modernwpf.controls.resources.dll.compressed" LogicalName="costura.it-it.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.it-it.modernwpf.resources.dll.compressed" LogicalName="costura.it-it.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ja-jp.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ja-jp.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ja-jp.modernwpf.resources.dll.compressed" LogicalName="costura.ja-jp.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ka-ge.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ka-ge.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ka-ge.modernwpf.resources.dll.compressed" LogicalName="costura.ka-ge.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.kk-kz.modernwpf.controls.resources.dll.compressed" LogicalName="costura.kk-kz.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.kk-kz.modernwpf.resources.dll.compressed" LogicalName="costura.kk-kz.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.km-kh.modernwpf.controls.resources.dll.compressed" LogicalName="costura.km-kh.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.km-kh.modernwpf.resources.dll.compressed" LogicalName="costura.km-kh.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.kn-in.modernwpf.controls.resources.dll.compressed" LogicalName="costura.kn-in.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.kn-in.modernwpf.resources.dll.compressed" LogicalName="costura.kn-in.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ko-kr.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ko-kr.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ko-kr.modernwpf.resources.dll.compressed" LogicalName="costura.ko-kr.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.lo-la.modernwpf.controls.resources.dll.compressed" LogicalName="costura.lo-la.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.lo-la.modernwpf.resources.dll.compressed" LogicalName="costura.lo-la.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.lt-lt.modernwpf.controls.resources.dll.compressed" LogicalName="costura.lt-lt.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.lt-lt.modernwpf.resources.dll.compressed" LogicalName="costura.lt-lt.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.lv-lv.modernwpf.controls.resources.dll.compressed" LogicalName="costura.lv-lv.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.lv-lv.modernwpf.resources.dll.compressed" LogicalName="costura.lv-lv.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.mk-mk.modernwpf.controls.resources.dll.compressed" LogicalName="costura.mk-mk.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.mk-mk.modernwpf.resources.dll.compressed" LogicalName="costura.mk-mk.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ml-in.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ml-in.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ml-in.modernwpf.resources.dll.compressed" LogicalName="costura.ml-in.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ms-my.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ms-my.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ms-my.modernwpf.resources.dll.compressed" LogicalName="costura.ms-my.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.nb-no.modernwpf.controls.resources.dll.compressed" LogicalName="costura.nb-no.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.nb-no.modernwpf.resources.dll.compressed" LogicalName="costura.nb-no.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.nl-nl.modernwpf.controls.resources.dll.compressed" LogicalName="costura.nl-nl.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.nl-nl.modernwpf.resources.dll.compressed" LogicalName="costura.nl-nl.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.nn-no.modernwpf.controls.resources.dll.compressed" LogicalName="costura.nn-no.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.nn-no.modernwpf.resources.dll.compressed" LogicalName="costura.nn-no.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.pl-pl.modernwpf.controls.resources.dll.compressed" LogicalName="costura.pl-pl.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.pl-pl.modernwpf.resources.dll.compressed" LogicalName="costura.pl-pl.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.pt-br.modernwpf.controls.resources.dll.compressed" LogicalName="costura.pt-br.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.pt-br.modernwpf.resources.dll.compressed" LogicalName="costura.pt-br.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.pt-pt.modernwpf.controls.resources.dll.compressed" LogicalName="costura.pt-pt.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.pt-pt.modernwpf.resources.dll.compressed" LogicalName="costura.pt-pt.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ro-ro.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ro-ro.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ro-ro.modernwpf.resources.dll.compressed" LogicalName="costura.ro-ro.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ru-ru.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ru-ru.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ru-ru.modernwpf.resources.dll.compressed" LogicalName="costura.ru-ru.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sk-sk.modernwpf.controls.resources.dll.compressed" LogicalName="costura.sk-sk.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sk-sk.modernwpf.resources.dll.compressed" LogicalName="costura.sk-sk.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sl-si.modernwpf.controls.resources.dll.compressed" LogicalName="costura.sl-si.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sl-si.modernwpf.resources.dll.compressed" LogicalName="costura.sl-si.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sq-al.modernwpf.controls.resources.dll.compressed" LogicalName="costura.sq-al.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sq-al.modernwpf.resources.dll.compressed" LogicalName="costura.sq-al.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sr-latn-rs.modernwpf.controls.resources.dll.compressed" LogicalName="costura.sr-latn-rs.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sr-latn-rs.modernwpf.resources.dll.compressed" LogicalName="costura.sr-latn-rs.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sv-se.modernwpf.controls.resources.dll.compressed" LogicalName="costura.sv-se.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sv-se.modernwpf.resources.dll.compressed" LogicalName="costura.sv-se.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sw-ke.modernwpf.controls.resources.dll.compressed" LogicalName="costura.sw-ke.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.sw-ke.modernwpf.resources.dll.compressed" LogicalName="costura.sw-ke.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ta-in.modernwpf.controls.resources.dll.compressed" LogicalName="costura.ta-in.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.ta-in.modernwpf.resources.dll.compressed" LogicalName="costura.ta-in.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.te-in.modernwpf.controls.resources.dll.compressed" LogicalName="costura.te-in.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.te-in.modernwpf.resources.dll.compressed" LogicalName="costura.te-in.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.th-th.modernwpf.controls.resources.dll.compressed" LogicalName="costura.th-th.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.th-th.modernwpf.resources.dll.compressed" LogicalName="costura.th-th.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.tr-tr.modernwpf.controls.resources.dll.compressed" LogicalName="costura.tr-tr.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.tr-tr.modernwpf.resources.dll.compressed" LogicalName="costura.tr-tr.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.uk-ua.modernwpf.controls.resources.dll.compressed" LogicalName="costura.uk-ua.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.uk-ua.modernwpf.resources.dll.compressed" LogicalName="costura.uk-ua.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.uz-latn-uz.modernwpf.controls.resources.dll.compressed" LogicalName="costura.uz-latn-uz.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.uz-latn-uz.modernwpf.resources.dll.compressed" LogicalName="costura.uz-latn-uz.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.vi-vn.modernwpf.controls.resources.dll.compressed" LogicalName="costura.vi-vn.modernwpf.controls.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.vi-vn.modernwpf.resources.dll.compressed" LogicalName="costura.vi-vn.modernwpf.resources.dll.compressed" />
+    <EmbeddedResource Include="costura.mongocrypt.dll.compressed" LogicalName="costura.mongocrypt.dll.compressed" />
+    <EmbeddedResource Include="costura.metadata" LogicalName="costura.metadata" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsAPICodePack.Shell.CommonFileDialogs" />
+    <Reference Include="MongoDB.Bson" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="DiscordRPC" />
+    <Reference Include="INIFileParser" />
+    <Reference Include="Microsoft.Toolkit.Uwp.Notifications" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+</Project>
