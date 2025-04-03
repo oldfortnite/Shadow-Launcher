@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application x:Class="ZYTROZLauncher.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:ZYTROZLauncher" xmlns:ui="http://schemas.modernwpf.com/2019">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <modernwpf:ThemeResources xmlns:modernwpf="clr-namespace:ModernWpf;assembly=ModernWpf" modernwpf:ThemeResources.RequestedTheme="Dark" />
+        <controls:XamlControlsResources xmlns:controls="clr-namespace:ModernWpf.Controls;assembly=ModernWpf" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
